@@ -1,0 +1,27 @@
+{
+  "name": "adam/greensite",
+  "authors": [
+    {
+      "name": "Adam Marshall",
+      "email": "adam@appsynergy.net"
+    }
+  ],
+  "repositories": [{
+    "type": "composer",
+    "url": "https://wpackagist.org"
+  }],
+  "require": {
+    "php": ">=5.6",
+    "johnpbloch/wordpress": "^4.5",
+    "vlucas/phpdotenv": "^2.2",
+    "wpackagist-plugin/rest-api": "2.0-beta13",
+    "wpackagist-theme/activello": "^1.0.2"
+  },
+  "extra": {
+    "wordpress-install-dir": "public/core",
+    "installer-paths": {
+      "public/content/themes/{$name}": ["type:wordpress-theme"],
+      "public/content/plugins/{$name}": ["type:wordpress-plugin"]
+    }
+  }
+}

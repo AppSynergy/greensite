@@ -1,0 +1,17 @@
+.env
+public/.htaccess
+
+# Ignore your managed content
+
+vendor/
+public/core/
+public/content/*
+!public/content/plugins/
+public/content/plugins/*
+!public/content/themes/
+public/content/themes/*
+
+# Track your custom content
+
+!public/content/themes/mytheme/
+# !public/content/plugins/myplugin/
